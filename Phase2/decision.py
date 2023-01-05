@@ -113,7 +113,7 @@ def decision_step(Rover):
 
 
 
-                Rover.throttle= - Rover.throttle_set
+                Rover.throttle= - 0.8
                 # Rover.steer = -15
                 Rover.steer = -np.clip(np.mean(Rover.nav_angles * 180 / np.pi), -15, 15)
                 time.sleep(0.5)
@@ -214,7 +214,7 @@ def decision_step(Rover):
             # if Rover.stuck_mode == 'forward':
             #     Rover.throttle = 2
             if Rover.stuck_time > Rover.error_limit:
-                Rover.throttle = -Rover.throttle_set
+                Rover.throttle = -0.8
                 Rover.steer = -np.clip(np.mean(Rover.nav_angles * 180 / np.pi), -15, 15)
             #
             #     Rover.stuck_mode='yaw'
