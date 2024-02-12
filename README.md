@@ -1,7 +1,5 @@
 # Phase1-RoverSimulator
 
-# Phase1-RoverSimulator
-
 ## The Simulator
 The first step is to download the simulator build that's appropriate for linux operating system. 
 
